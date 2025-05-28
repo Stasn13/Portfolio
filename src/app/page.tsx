@@ -44,7 +44,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section></section>
+      <section>
+        <h2>About Me</h2>
+      </section>
     </div>
   );
 }
