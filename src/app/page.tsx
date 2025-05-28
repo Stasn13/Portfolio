@@ -47,6 +47,14 @@ export default function Home() {
       <section>
         <h2>About Me</h2>
       </section>
+      <section>
+        <h2>Works</h2>
+      </section>
+      <section>
+        <Card className="bg-background-card-4 border-none flex-2 rounded-4xl">
+          <h2>Contact Me</h2>
+        </Card>
+      </section>
     </div>
   );
 }
