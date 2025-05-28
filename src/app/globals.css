@@ -5,8 +5,7 @@
 
 :root {
   --radius: 0.625rem;
-  --background: #000000;
-  --background-blue: #2D00FF;
+  --background: #131213;
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
@@ -37,6 +36,11 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+
+  --background-card-1: #3B00FF;
+  --background-card-2: #EEE;
+  --background-card-3: #2A2A2A;
+  --background-card-4: #FFEF64;
 }
 
 @theme inline {
@@ -77,6 +81,10 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+  --color-background-card-1: var(--background-card-1);
+  --color-background-card-2: var(--background-card-2);
+  --color-background-card-3: var(--background-card-3);
+  --color-background-card-4: var(--background-card-4);
 }
 
 .dark {
@@ -111,6 +119,8 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+
+  --background-card: #3B00FF;
 }
 
 @layer base {

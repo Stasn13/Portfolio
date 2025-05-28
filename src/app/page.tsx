@@ -35,15 +35,16 @@ export default function Home() {
                 works(projects)
               </Card>
               <Card className="bg-background-card-3 border-none flex-1 text-white rounded-4xl">
-                here we go
+                About me
               </Card>
             </div>
             <Card className="bg-background-card-4 border-none flex-2 rounded-4xl">
-              here we go
+              Contact me
             </Card>
           </div>
         </div>
       </section>
+      <section></section>
     </div>
   );
 }
