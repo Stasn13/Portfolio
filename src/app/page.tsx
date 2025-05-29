@@ -5,40 +5,52 @@ export default function Home() {
     <div className="p-4">
       <section className="flex flex-col h-[100vh] justify-between">
         <div>
-          <h1 className="text-white font-bold text-4xl">Frontend Developer</h1>
+          <h1 className="text-4xl font-bold text-white">Frontend Developer</h1>
           <h2 className="text-white">Stanislav Gavrylenko</h2>
+          <h3 className="text-white">
+            Senior Frontend Engineer with 6+ years of experience building
+            performant Web3 and DeFi applications. Focused on scalable
+            architecture, UI/UX performance, and developer experience. Strong
+            contributor to modular design and cross-functional teams.
+          </h3>
         </div>
         <div className="flex gap-2 w-full">
-          <Card className="bg-background-card-1 border-none flex-1 border-xl rounded-4xl">
+          <Card className="flex-1 border-none bg-background-card-1 border-xl rounded-4xl">
             <CardHeader>
               <CardTitle>skills</CardTitle>
             </CardHeader>
             <CardContent>
               <ul>
-                <li>html</li>
-                <li>css</li>
-                <li>js</li>
-                <li>react</li>
-                <li>next</li>
-                <li>tailwind</li>
-                <li>typescript</li>
-                <li>git</li>
-                <li>github</li>
-                <li>figma</li>
-                <li>adobe xd</li>
+                <li>
+                  Core: React | Next.js | React native | RTK | Zustand |
+                  Typescript | GraphQL | Websocket{" "}
+                </li>
+                <li>
+                  Web3: ethers.js | Wagmi | Solidity | solana/web3.js | TheGraph
+                </li>
+                <li>
+                  Styling: TailwindCSS | shadcn/ui | Radix UI |
+                  styled-components | Material UI | Chakra-ui
+                </li>
+                <li>Testing: Jest | Storybook</li>
+                <li>Tooling: NX monorepos | webpack | Git</li>
+                <li>
+                  Soft Skills: Technical mentorship, system-level thinking, bias
+                  for shipping, strong debugging intuition
+                </li>
               </ul>
             </CardContent>
           </Card>
-          <div className="flex flex-col gap-2 flex-1">
+          <div className="flex flex-col flex-1 gap-2">
             <div className="flex gap-2">
-              <Card className="bg-background-card-2 border-none flex-1 rounded-4xl">
+              <Card className="flex-1 border-none bg-background-card-2 rounded-4xl">
                 works(projects)
               </Card>
-              <Card className="bg-background-card-3 border-none flex-1 text-white rounded-4xl">
+              <Card className="flex-1 text-white border-none bg-background-card-3 rounded-4xl">
                 About me
               </Card>
             </div>
-            <Card className="bg-background-card-4 border-none flex-2 rounded-4xl">
+            <Card className="border-none bg-background-card-4 flex-2 rounded-4xl">
               Contact me
             </Card>
           </div>
@@ -51,7 +63,7 @@ export default function Home() {
         <h2>Works</h2>
       </section>
       <section>
-        <Card className="bg-background-card-4 border-none flex-2 rounded-4xl">
+        <Card className="border-none bg-background-card-4 flex-2 rounded-4xl">
           <h2>Contact Me</h2>
         </Card>
       </section>
