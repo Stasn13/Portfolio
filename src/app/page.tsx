@@ -22,21 +22,31 @@ export default function Home() {
             <CardContent>
               <ul>
                 <li>
-                  Core: React | Next.js | React native | RTK | Zustand |
-                  Typescript | GraphQL | Websocket{" "}
+                  <span className="font-bold">Core:</span>
+                  React | Next.js | React native | RTK | Zustand | Typescript |
+                  GraphQL | Websocket{" "}
                 </li>
                 <li>
-                  Web3: ethers.js | Wagmi | Solidity | solana/web3.js | TheGraph
+                  <span className="font-bold">Web3:</span>
+                  ethers.js | Wagmi | Solidity | solana/web3.js | TheGraph
                 </li>
                 <li>
-                  Styling: TailwindCSS | shadcn/ui | Radix UI |
-                  styled-components | Material UI | Chakra-ui
+                  <span className="font-bold">Styling:</span>
+                  TailwindCSS | shadcn/ui | Radix UI | styled-components |
+                  Material UI | Chakra-ui
                 </li>
-                <li>Testing: Jest | Storybook</li>
-                <li>Tooling: NX monorepos | webpack | Git</li>
                 <li>
-                  Soft Skills: Technical mentorship, system-level thinking, bias
-                  for shipping, strong debugging intuition
+                  <span className="font-bold">Testing:</span>
+                  Jest | Storybook
+                </li>
+                <li>
+                  <span className="font-bold">Tooling:</span>
+                  NX monorepos | webpack | Git
+                </li>
+                <li>
+                  <span className="font-bold">Soft Skills:</span> Technical
+                  mentorship, system-level thinking, bias for shipping, strong
+                  debugging intuition
                 </li>
               </ul>
             </CardContent>
