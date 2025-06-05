@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function Home() {
   return (
-    <div className="p-4">
+    <div className="flex flex-col gap-2 p-4">
       <section className="flex flex-col h-[100vh] justify-between">
         <div>
           <h1 className="text-4xl font-bold text-white">Frontend Developer</h1>
@@ -67,10 +67,20 @@ export default function Home() {
         </div>
       </section>
       <section>
-        <h2>About Me</h2>
+        <Card>
+          <h2>Works</h2>
+        </Card>
+        <div>
+          <Card>
+            <h2>Project 1</h2>
+          </Card>
+          <Card>
+            <h2>Project 2</h2>
+          </Card>
+        </div>
       </section>
       <section>
-        <h2>Works</h2>
+        <h2>About Me</h2>
       </section>
       <section>
         <Card className="border-none bg-background-card-4 flex-2 rounded-4xl">
