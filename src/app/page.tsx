@@ -73,10 +73,10 @@ export default function Home() {
         </Card>
         {projects.map((project) => (
           <div className="flex gap-2">
-            <Card>
+            <Card className="bg-background-card-3">
               <CardTitle>{project.name}</CardTitle>
             </Card>
-            <Card>image</Card>
+            <Card className="bg-background-card-1">image</Card>
           </div>
         ))}
       </section>
