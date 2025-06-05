@@ -6,7 +6,7 @@ export const projects = [
         link: "https://github.com",
     },
     {
-        name: "BacnkWatch",
+        name: "BankWatch",
         description: "Description of project 2",
         image: "https://via.placeholder.com/150",
         link: "https://github.com",
