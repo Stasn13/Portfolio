@@ -86,6 +86,7 @@ export default function Home() {
       <section>
         <Card className="border-none bg-background-card-4 flex-2 rounded-4xl">
           <h2>Contact Me</h2>
+          <CardContent>linkedin github telegram</CardContent>
         </Card>
       </section>
     </div>
