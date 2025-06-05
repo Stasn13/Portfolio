@@ -1,4 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { projects } from "@/constants/projects";
 
 export default function Home() {
   return (
@@ -70,14 +71,14 @@ export default function Home() {
         <Card>
           <h2>Works</h2>
         </Card>
-        <div>
-          <Card>
-            <h2>Project 1</h2>
-          </Card>
-          <Card>
-            <h2>Project 2</h2>
-          </Card>
-        </div>
+        {projects.map((project) => (
+          <div className="flex gap-2">
+            <Card>
+              <CardTitle>{project.name}</CardTitle>
+            </Card>
+            <Card>image</Card>
+          </div>
+        ))}
       </section>
       <section>
         <h2>About Me</h2>
