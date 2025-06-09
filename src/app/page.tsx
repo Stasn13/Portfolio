@@ -82,6 +82,10 @@ export default function Home() {
       </section>
       <section>
         <h2>About Me</h2>
+        <p>Firefighting mode</p>
+        <p>Calm in chaos, chaos in calm.</p>
+        <p>Vision with execution. Walk the walk.</p>
+        <p>Build with care. Ship with confidence.</p>
       </section>
       <section>
         <Card className="border-none bg-background-card-4 flex-2 rounded-4xl">
