@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { projects } from "@/constants/projects";
+import { SquareTerminal } from "lucide-react";
 
 export default function Home() {
   return (
@@ -56,6 +57,7 @@ export default function Home() {
             <div className="flex gap-2">
               <Card className="flex-1 border-none bg-background-card-2 rounded-4xl">
                 works(projects)
+                <SquareTerminal />
               </Card>
               <Card className="flex-1 text-white border-none bg-background-card-3 rounded-4xl">
                 About me
@@ -72,7 +74,7 @@ export default function Home() {
           <h2>Works</h2>
         </Card>
         {projects.map((project) => (
-          <div className="flex gap-2">
+          <div className="flex gap-2" key={project.name}>
             <Card className="bg-background-card-3">
               <CardTitle>{project.name}</CardTitle>
             </Card>
