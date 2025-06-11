@@ -1,13 +1,20 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { projects } from "@/constants/projects";
 import { SquareTerminal } from "lucide-react";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <div className="flex flex-col gap-2 p-4">
       <section className="flex flex-col h-[100vh] justify-between">
         <div>
-          <h1 className="text-4xl font-bold text-white">Frontend Developer</h1>
+          <h1 className="text-6xl font-black text-white">Frontend Developer</h1>
           <h2 className="text-white">Stanislav Gavrylenko</h2>
           <h3 className="text-white">
             Senior Frontend Engineer with 6+ years of experience building
@@ -17,7 +24,7 @@ export default function Home() {
           </h3>
         </div>
         <div className="flex gap-2 w-full">
-          <Card className="flex-1 border-none bg-background-card-1 border-xl rounded-4xl">
+          <Card className="flex-1 text-white border-none bg-background-card-1 border-xl rounded-4xl">
             <CardHeader>
               <CardTitle>skills</CardTitle>
             </CardHeader>
@@ -55,8 +62,8 @@ export default function Home() {
           </Card>
           <div className="flex flex-col flex-1 gap-2">
             <div className="flex gap-2">
-              <Card className="flex-1 border-none bg-background-card-2 rounded-4xl">
-                works(projects)
+              <Card className="flex-1 font-black border-none bg-background-card-2 rounded-4xl font-2xl">
+                works
                 <SquareTerminal />
               </Card>
               <Card className="flex-1 text-white border-none bg-background-card-3 rounded-4xl">
@@ -77,8 +84,17 @@ export default function Home() {
           <div className="flex gap-2" key={project.name}>
             <Card className="bg-background-card-3">
               <CardTitle>{project.name}</CardTitle>
+              <CardDescription>{project.desc}</CardDescription>
             </Card>
-            <Card className="bg-background-card-1">image</Card>
+            <Card className="bg-background-card-1">
+              <Image
+                src={project.img}
+                alt={project.name}
+                width={300}
+                height={200}
+                className="object-cover w-full h-auto"
+              />
+            </Card>
           </div>
         ))}
       </section>
