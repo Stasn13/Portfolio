@@ -108,7 +108,14 @@ export default function Home() {
       <section>
         <Card className="border-none bg-background-card-4 flex-2 rounded-4xl">
           <h2>Contact Me</h2>
-          <CardContent>linkedin github telegram</CardContent>
+          <CardContent>
+            <a href="https://www.linkedin.com/in/stanislav-gavrilenko/">
+              linkedin
+            </a>
+            <a href="https://github.com/Stasn13">github</a>
+            {/* todo: need to add quicklink */}
+            <a href="https://t.me">telegram</a>
+          </CardContent>
         </Card>
       </section>
     </div>
