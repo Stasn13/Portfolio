@@ -26,7 +26,7 @@ export default function Home() {
         <div className="flex gap-2 w-full">
           <Card className="flex-1 text-white border-none bg-background-card-1 border-xl rounded-4xl">
             <CardHeader>
-              <CardTitle>skills</CardTitle>
+              <CardTitle>Skills</CardTitle>
             </CardHeader>
             <CardContent>
               <ul>
