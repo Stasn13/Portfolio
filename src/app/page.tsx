@@ -5,6 +5,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { WobbleCard } from "@/components/WobbleCard/WobbleCard";
 import { projects } from "@/constants/projects";
 import { SquareTerminal } from "lucide-react";
 import Image from "next/image";
@@ -24,7 +25,7 @@ export default function Home() {
           </h3>
         </div>
         <div className="flex gap-2 w-full">
-          <Card className="flex-1 text-white border-none bg-background-card-1 border-xl rounded-4xl">
+          <WobbleCard containerClassName="bg-background-card-1 flex-1 text-white border-none border-xl rounded-4xl">
             <CardHeader>
               <CardTitle>Skills</CardTitle>
             </CardHeader>
@@ -59,20 +60,29 @@ export default function Home() {
                 </li>
               </ul>
             </CardContent>
-          </Card>
+          </WobbleCard>
           <div className="flex flex-col flex-1 gap-2">
             <div className="flex gap-2">
-              <Card className="flex-1 font-black border-none bg-background-card-2 rounded-4xl font-2xl">
+              <WobbleCard
+                className="flex-1 font-black border-none rounded-4xl font-2xl"
+                containerClassName="bg-background-card-2"
+              >
                 works
                 <SquareTerminal />
-              </Card>
-              <Card className="flex-1 text-white border-none bg-background-card-3 rounded-4xl">
+              </WobbleCard>
+              <WobbleCard
+                className="flex-1 text-white border-none rounded-4xl"
+                containerClassName="bg-background-card-3"
+              >
                 About me
-              </Card>
+              </WobbleCard>
             </div>
-            <Card className="border-none bg-background-card-4 flex-2 rounded-4xl">
+            <WobbleCard
+              className="border-none flex-2 rounded-4xl"
+              containerClassName="bg-background-card-4"
+            >
               Contact me
-            </Card>
+            </WobbleCard>
           </div>
         </div>
       </section>
