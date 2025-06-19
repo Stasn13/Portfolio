@@ -24,7 +24,7 @@ export default function Home() {
             contributor to modular design and cross-functional teams.
           </h3>
         </div>
-        <div className="flex gap-2 w-full">
+        <div className="flex gap-4 w-full">
           <WobbleCard containerClassName="bg-background-card-1 flex-1 text-white border-none border-xl rounded-4xl">
             <CardHeader>
               <CardTitle>Skills</CardTitle>
@@ -32,29 +32,29 @@ export default function Home() {
             <CardContent>
               <ul>
                 <li>
-                  <span className="font-bold">Core:</span>
+                  <span className="font-bold">Core: </span>
                   React | Next.js | React native | RTK | Zustand | Typescript |
                   GraphQL | Websocket{" "}
                 </li>
                 <li>
-                  <span className="font-bold">Web3:</span>
+                  <span className="font-bold">Web3: </span>
                   ethers.js | Wagmi | Solidity | solana/web3.js | TheGraph
                 </li>
                 <li>
-                  <span className="font-bold">Styling:</span>
+                  <span className="font-bold">Styling: </span>
                   TailwindCSS | shadcn/ui | Radix UI | styled-components |
                   Material UI | Chakra-ui
                 </li>
                 <li>
-                  <span className="font-bold">Testing:</span>
+                  <span className="font-bold">Testing: </span>
                   Jest | Storybook
                 </li>
                 <li>
-                  <span className="font-bold">Tooling:</span>
+                  <span className="font-bold">Tooling: </span>
                   NX monorepos | webpack | Git
                 </li>
                 <li>
-                  <span className="font-bold">Soft Skills:</span> Technical
+                  <span className="font-bold">Soft Skills: </span> Technical
                   mentorship, system-level thinking, bias for shipping, strong
                   debugging intuition
                 </li>
@@ -117,8 +117,8 @@ export default function Home() {
       </section>
       <section>
         <Card className="border-none bg-background-card-4 flex-2 rounded-4xl">
-          <h2>Contact Me</h2>
-          <CardContent>
+          <h2>Contact Me:</h2>
+          <CardContent className="flex flex-col gap-2">
             <a href="https://www.linkedin.com/in/stanislav-gavrilenko/">
               linkedin
             </a>
