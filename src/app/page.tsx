@@ -114,6 +114,9 @@ export default function Home() {
         <p>Calm in chaos, chaos in calm.</p>
         <p>Vision with execution. Walk the walk.</p>
         <p>Build with care. Ship with confidence.</p>
+        <p>Adapt fast. Decide faster.</p>
+        <p>No ego. Just ownership.</p>
+        <p>Build for outcomes. Not optics.</p>
       </section>
       <section>
         <Card className="border-none bg-background-card-4 flex-2 rounded-4xl">
