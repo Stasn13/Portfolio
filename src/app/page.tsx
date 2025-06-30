@@ -123,11 +123,11 @@ export default function Home() {
           <h2>Contact Me:</h2>
           <CardContent className="flex flex-col gap-2">
             <a href="https://www.linkedin.com/in/stanislav-gavrilenko/">
-              linkedin
+              LinkedIn
             </a>
-            <a href="https://github.com/Stasn13">github</a>
+            <a href="https://github.com/Stasn13">Github</a>
             {/* todo: need to add quicklink */}
-            <a href="https://t.me">telegram</a>
+            <a href="https://t.me">Telegram</a>
           </CardContent>
         </Card>
       </section>
